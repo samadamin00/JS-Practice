@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="header">
+                Calculator
+            </div>
+            
+            <div class="btn-main">
+                <form action="#">
+                    <div class="inp">
+                        <input readonly type="text" id="inp" placeholder="0">
+                        <div class="jsf">
+                            <button id="clear" onclick="clearo()"> C</button>
+                            <button id="lastValueDel" onclick="del()">Del</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="btn">
+                    <button onclick="tuch(9)">9</button>
+                    <button onclick="tuch(8)">8</button>
+                    <button onclick="tuch(7)">7</button>
+                    <button onclick="tuch('*')">*</button>
+                </div>
+
+                <div class="btn">
+                    <button onclick="tuch(6)">6</button>
+                    <button onclick="tuch(5)">5</button>
+                    <button onclick="tuch(4)">4</button>
+                    <button onclick="tuch('-')">-</button>
+                </div>
+
+                <div class="btn">
+                    <button onclick="tuch(3)">3</button>
+                    <button onclick="tuch(2)">2</button>
+                    <button onclick="tuch(1)">1</button>
+                    <button onclick="tuch('+')">+</button>
+                </div>
+
+                <div class="btn">
+                    <button onclick="tuch(0)">0</button>
+                    <button onclick="tuch('.')">.</button>
+                    <button onclick="tuch('%')">%</button>
+                    <button onclick="evalute()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
